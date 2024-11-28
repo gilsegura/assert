@@ -1,0 +1,32 @@
+{
+    "name": "gilsegura/assert",
+    "description": "This is a proxy project providing infrastructure for implementing [beberlei/assert](https://github.com/beberlei/assert).",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.3",
+        "beberlei/assert": "^3.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3",
+        "phpstan/phpstan": "^1",
+        "phpunit/phpunit": "^11",
+        "rector/rector": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProxyAssert\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProxyAssert\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
